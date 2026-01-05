@@ -1,8 +1,5 @@
-/* ============================================
-   VARIABLES & RESET
-   ============================================ */
+/* VARIABLES & RESET */
 :root {
-  /* Palette de couleurs raffinée */
   --primary: #0accb5;
   --white-turquoise: #e8f7f5;
   --soft-turquoise: #1fd4c1;
@@ -67,9 +64,7 @@ body {
   overflow-x: hidden;
 }
 
-/* ============================================
-   TYPOGRAPHIE AMÉLIORÉE
-   ============================================ */
+/* TYPOGRAPHIE AMÉLIORÉE */
 h1,
 h2,
 h3,
@@ -144,9 +139,7 @@ p {
   padding: 0 var(--spacing-md);
 }
 
-/* ============================================
-   HEADER MODERNE
-   ============================================ */
+/* HEADER */
 .header {
   position: fixed;
   top: 0;
@@ -235,9 +228,7 @@ p {
   transition: var(--transition-fast);
 }
 
-/* ============================================
-   BOUTONS CTA MODERNES
-   ============================================ */
+/* BOUTONS CTA */
 .cta-button {
   display: inline-block;
   padding: 1rem 2.5rem;
@@ -289,9 +280,7 @@ p {
   color: var(--white);
 }
 
-/* ============================================
-   HERO SECTION MODERNE
-   ============================================ */
+/* HERO SECTION */
 .hero-section {
   display: flex;
   justify-content: center;
@@ -409,9 +398,7 @@ p {
   }
 }
 
-/* ============================================
-   INTRO TEXT SECTION
-   ============================================ */
+/* INTRO TEXT SECTION */
 .intro-text-section h2 {
   text-align: center;
 }
@@ -548,9 +535,7 @@ p {
   }
 }
 
-/* ============================================
-   ABOUT SECTION ÉLÉGANTE
-   ============================================ */
+/* ABOUT SECTION ÉLÉGANTE */
 .about-section {
   padding: var(--spacing-xl) var(--spacing-md);
   background: linear-gradient(
@@ -668,20 +653,14 @@ p {
   }
 }
 
-/* ============================================
-
-   SOLUTION SECTION
-
-   ============================================ */
+/* SOLUTION SECTION */
 
 .solution-section {
   background: var(--white);
   padding: var(--spacing-xl) var(--spacing-md);
 }
 
-/* ============================================
-
-   SERVICES CARDS MODERNES   ============================================ */
+/* SERVICES CARDS */
 .services-section {
   padding: var(--spacing-xl) var(--spacing-md);
   background: linear-gradient(
@@ -809,9 +788,7 @@ p {
     grid-template-columns: 1fr;
   }
 }
-/* ============================================
-   TESTIMONIALS SECTION
-   ============================================ */
+/* TESTIMONIALS SECTION */
 .testimonials-section {
   padding: var(--spacing-xl) var(--spacing-md);
   background: var(--white);
@@ -873,9 +850,7 @@ p {
   text-align: right;
 }
 
-/* ============================================
-   FAQ SECTION MODERNE
-   ============================================ */
+/* FAQ SECTION */
 .faq-section {
   padding: var(--spacing-xl) var(--spacing-md);
   background: linear-gradient(
@@ -942,9 +917,7 @@ p {
   color: var(--medium-text);
 }
 
-/* ============================================
-   NEWSLETTER SECTION
-   ============================================ */
+/* NEWSLETTER SECTION */
 .newsletter-section {
   padding: var(--spacing-xl) var(--spacing-md);
   background: linear-gradient(135deg, var(--soft-turquoise), var(--primary));
@@ -1010,9 +983,7 @@ p {
   background: var(--off-white);
 }
 
-/* ============================================
-   FOOTER
-   ============================================ */
+/* FOOTER */
 .footer {
   background: var(--dark-text);
   color: var(--white);
@@ -1035,9 +1006,7 @@ p {
   color: var(--accent-turquoise);
 }
 
-/* ============================================
-   ANIMATIONS
-   ============================================ */
+/* ANIMATIONS */
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -1049,9 +1018,7 @@ p {
   }
 }
 
-/* ============================================
-   RESPONSIVE
-   ============================================ */
+/* RESPONSIVE */
 @media (max-width: 768px) {
   .hamburger {
     display: flex;
