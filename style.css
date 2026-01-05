@@ -1,18 +1,17 @@
-/* ============================================
-   VARIABLES & RESET
-   ============================================ */
+/* VARIABLES & RESET */
 :root {
-  /* Palette de couleurs raffinée */
-  --primary-pink: #e8b4bc;
-  --soft-pink: #f5e6e8;
-  --dusty-rose: #d4949c;
-  --accent-coral: #e89b9b;
-  --dark-text: #2d2d2d;
+  --primary: #0accb5;
+  --white-turquoise: #e8f7f5;
+  --soft-turquoise: #1fd4c1;
+  --accent-turquoise: #8dd4ca;
+  --dark-text: #011038;
   --medium-text: #5a5a5a;
   --light-text: #8a8a8a;
   --white: #ffffff;
   --off-white: #fefefe;
   --light-gray: #f8f8f8;
+  --orange: #f5a035;
+  --soft-orange: #f8b05c;
 
   /* Typographie */
   --font-main: "Poppins", sans-serif;
@@ -65,9 +64,7 @@ body {
   overflow-x: hidden;
 }
 
-/* ============================================
-   TYPOGRAPHIE AMÉLIORÉE
-   ============================================ */
+/* TYPOGRAPHIE AMÉLIORÉE */
 h1,
 h2,
 h3,
@@ -96,7 +93,7 @@ h2::after {
   left: 0;
   width: 80px;
   height: 4px;
-  background: linear-gradient(90deg, var(--primary-pink), var(--accent-coral));
+  background: linear-gradient(90deg, var(--primary), var(--accent-turquoise));
   border-radius: var(--radius-full);
 }
 
@@ -111,15 +108,38 @@ p {
   margin-bottom: var(--spacing-md);
 }
 
+.checklist {
+  list-style: none;
+  padding-left: 0;
+  margin-top: var(--spacing-md);
+  margin-bottom: var(--spacing-md);
+}
+
+.checklist li {
+  padding-left: 1.8rem;
+  margin-bottom: var(--spacing-sm);
+  position: relative;
+  color: var(--medium-text);
+  font-size: clamp(1rem, 2vw, 1.125rem);
+}
+
+.checklist li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 2px;
+  color: var(--orange);
+  font-weight: var(--font-weight-bold);
+  font-size: 1.2rem;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 var(--spacing-md);
 }
 
-/* ============================================
-   HEADER MODERNE
-   ============================================ */
+/* HEADER */
 .header {
   position: fixed;
   top: 0;
@@ -146,7 +166,7 @@ p {
   font-weight: var(--font-weight-bold);
   color: var(--dark-text);
   text-decoration: none;
-  background: linear-gradient(135deg, var(--dusty-rose), var(--primary-pink));
+  background: linear-gradient(135deg, var(--soft-turquoise), var(--primary));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -180,7 +200,7 @@ p {
   left: 0;
   width: 0;
   height: 2px;
-  background: linear-gradient(90deg, var(--primary-pink), var(--accent-coral));
+  background: linear-gradient(90deg, var(--primary), var(--accent-turquoise));
   transition: var(--transition-normal);
 }
 
@@ -189,7 +209,7 @@ p {
 }
 
 .nav-link:not(.cta-button):hover {
-  color: var(--dusty-rose);
+  color: var(--soft-turquoise);
 }
 
 /* Hamburger Menu */
@@ -203,18 +223,16 @@ p {
 .bar {
   width: 25px;
   height: 3px;
-  background-color: var(--dusty-rose);
+  background-color: var(--soft-turquoise);
   border-radius: var(--radius-full);
   transition: var(--transition-fast);
 }
 
-/* ============================================
-   BOUTONS CTA MODERNES
-   ============================================ */
+/* BOUTONS CTA */
 .cta-button {
   display: inline-block;
   padding: 1rem 2.5rem;
-  background: linear-gradient(135deg, var(--dusty-rose), var(--primary-pink));
+  background: linear-gradient(135deg, var(--soft-turquoise), var(--primary));
   color: var(--white);
   text-decoration: none;
   border-radius: var(--radius-full);
@@ -235,7 +253,11 @@ p {
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(135deg, var(--accent-coral), var(--dusty-rose));
+  background: linear-gradient(
+    135deg,
+    var(--accent-turquoise),
+    var(--soft-turquoise)
+  );
   transition: var(--transition-normal);
   z-index: -1;
 }
@@ -249,9 +271,16 @@ p {
   box-shadow: var(--shadow-hover);
 }
 
-/* ============================================
-   HERO SECTION MODERNE
-   ============================================ */
+.cta-button--inverted {
+  background: var(--white);
+  color: var(--soft-turquoise);
+}
+
+.cta-button--inverted:hover {
+  color: var(--white);
+}
+
+/* HERO SECTION */
 .hero-section {
   display: flex;
   justify-content: center;
@@ -260,7 +289,7 @@ p {
   padding: var(--spacing-xl) var(--spacing-md);
   background: linear-gradient(
     135deg,
-    var(--soft-pink) 0%,
+    var(--white-turquoise) 0%,
     var(--white) 50%,
     var(--light-gray) 100%
   );
@@ -318,7 +347,7 @@ p {
 }
 
 .cta-primary {
-  background: linear-gradient(135deg, var(--dusty-rose), var(--primary-pink));
+  background: linear-gradient(135deg, var(--soft-turquoise), var(--primary));
   color: var(--white);
 }
 
@@ -329,12 +358,12 @@ p {
 
 .cta-secondary {
   background: var(--white);
-  color: var(--dusty-rose);
-  border: 2px solid var(--primary-pink);
+  color: var(--soft-turquoise);
+  border: 2px solid var(--primary);
 }
 
 .cta-secondary:hover {
-  background: var(--soft-pink);
+  background: var(--white-turquoise);
   transform: translateY(-3px);
 }
 
@@ -369,9 +398,7 @@ p {
   }
 }
 
-/* ============================================
-   INTRO TEXT SECTION
-   ============================================ */
+/* INTRO TEXT SECTION */
 .intro-text-section h2 {
   text-align: center;
 }
@@ -421,7 +448,7 @@ p {
 .intro-card:hover {
   transform: translateY(-8px);
   box-shadow: var(--shadow-hover);
-  border-color: var(--primary-pink);
+  border-color: var(--primary);
 }
 
 .intro-card-image {
@@ -459,7 +486,7 @@ p {
 
 .intro-card h3 {
   font-size: 1.5rem;
-  color: var(--dusty-rose);
+  color: var(--soft-turquoise);
   margin: var(--spacing-md) var(--spacing-lg) var(--spacing-sm);
   text-align: center;
   font-weight: var(--font-weight-bold);
@@ -474,7 +501,7 @@ p {
 }
 
 .intro-card em {
-  color: var(--dusty-rose);
+  color: var(--soft-turquoise);
   font-style: italic;
   font-weight: var(--font-weight-semibold);
 }
@@ -508,12 +535,14 @@ p {
   }
 }
 
-/* ============================================
-   ABOUT SECTION ÉLÉGANTE
-   ============================================ */
+/* ABOUT SECTION ÉLÉGANTE */
 .about-section {
   padding: var(--spacing-xl) var(--spacing-md);
-  background: linear-gradient(180deg, var(--light-gray), var(--soft-pink));
+  background: linear-gradient(
+    180deg,
+    var(--light-gray),
+    var(--white-turquoise)
+  );
   position: relative;
   overflow: hidden;
 }
@@ -575,7 +604,7 @@ p {
   right: -20px;
   width: 100%;
   height: 100%;
-  background: linear-gradient(135deg, var(--primary-pink), var(--accent-coral));
+  background: linear-gradient(135deg, var(--primary), var(--accent-turquoise));
   border-radius: var(--radius-lg);
   z-index: 1;
   opacity: 0.3;
@@ -600,8 +629,8 @@ p {
   top: -10px;
   left: 20px;
   font-size: 5rem;
-  color: var(--primary-pink);
-  opacity: 0.1;
+  color: var(--orange);
+  opacity: 0.5;
   font-family: Georgia, serif;
   line-height: 1;
 }
@@ -619,16 +648,27 @@ p {
 
   .about-image {
     max-width: 400px;
+
     margin: 0 auto;
   }
 }
 
-/* ============================================
-   SERVICES CARDS MODERNES
-   ============================================ */
+/* SOLUTION SECTION */
+
+.solution-section {
+  background: var(--white);
+  padding: var(--spacing-xl) var(--spacing-md);
+}
+
+/* SERVICES CARDS */
 .services-section {
   padding: var(--spacing-xl) var(--spacing-md);
-  background: var(--white);
+  background: linear-gradient(
+    135deg,
+    var(--white-turquoise) 0%,
+    var(--white) 50%,
+    var(--light-gray) 100%
+  );
 }
 
 .services-section h2 {
@@ -665,26 +705,16 @@ p {
   text-align: center;
 }
 
-.service-card::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 5px;
-  background: linear-gradient(90deg, var(--primary-pink), var(--accent-coral));
-}
-
 .service-card:hover {
   transform: translateY(-10px);
   box-shadow: var(--shadow-hover);
-  border-color: var(--primary-pink);
+  border-color: var(--primary);
 }
 
 .service-icon {
   width: 100px;
   height: 100px;
-  background: linear-gradient(135deg, var(--soft-pink), var(--primary-pink));
+  background: linear-gradient(135deg, var(--soft-orange), var(--orange));
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -707,7 +737,7 @@ p {
 }
 
 .service-card h3 {
-  color: var(--dusty-rose);
+  color: var(--soft-turquoise);
   margin-bottom: var(--spacing-md);
   min-height: 3rem;
   display: flex;
@@ -742,7 +772,7 @@ p {
   content: "✓";
   position: absolute;
   left: 0;
-  color: var(--primary-pink);
+  color: var(--primary);
   font-weight: var(--font-weight-bold);
 }
 
@@ -758,12 +788,10 @@ p {
     grid-template-columns: 1fr;
   }
 }
-/* ============================================
-   TESTIMONIALS SECTION
-   ============================================ */
+/* TESTIMONIALS SECTION */
 .testimonials-section {
   padding: var(--spacing-xl) var(--spacing-md);
-  background: linear-gradient(180deg, var(--soft-pink), var(--white));
+  background: var(--white);
 }
 
 .testimonials-section h2 {
@@ -789,6 +817,7 @@ p {
   box-shadow: var(--shadow-sm);
   position: relative;
   transition: var(--transition-normal);
+  border: 1px solid var(--light-gray);
 }
 
 .testimonial-card::before {
@@ -797,8 +826,8 @@ p {
   top: 10px;
   left: 20px;
   font-size: 4rem;
-  color: var(--primary-pink);
-  opacity: 0.2;
+  color: var(--orange);
+  opacity: 0.5;
   font-family: Georgia, serif;
 }
 
@@ -816,17 +845,19 @@ p {
 }
 
 .testimonial-card h4 {
-  color: var(--dusty-rose);
+  color: var(--soft-turquoise);
   font-weight: var(--font-weight-semibold);
   text-align: right;
 }
 
-/* ============================================
-   FAQ SECTION MODERNE
-   ============================================ */
+/* FAQ SECTION */
 .faq-section {
   padding: var(--spacing-xl) var(--spacing-md);
-  background: var(--light-gray);
+  background: linear-gradient(
+    180deg,
+    var(--light-gray),
+    var(--white-turquoise)
+  );
 }
 
 .faq-section h2 {
@@ -869,7 +900,7 @@ p {
 .faq-item summary::after {
   content: "+";
   font-size: 1.5rem;
-  color: var(--primary-pink);
+  color: var(--primary);
   transition: var(--transition-fast);
 }
 
@@ -878,7 +909,7 @@ p {
 }
 
 .faq-item summary:hover {
-  background: var(--soft-pink);
+  background: var(--white-turquoise);
 }
 
 .faq-item p {
@@ -886,12 +917,10 @@ p {
   color: var(--medium-text);
 }
 
-/* ============================================
-   NEWSLETTER SECTION
-   ============================================ */
+/* NEWSLETTER SECTION */
 .newsletter-section {
   padding: var(--spacing-xl) var(--spacing-md);
-  background: linear-gradient(135deg, var(--dusty-rose), var(--primary-pink));
+  background: linear-gradient(135deg, var(--soft-turquoise), var(--primary));
   text-align: center;
   color: var(--white);
 }
@@ -947,16 +976,14 @@ p {
 
 .newsletter-form .cta-button {
   background: var(--white);
-  color: var(--dusty-rose);
+  color: var(--soft-turquoise);
 }
 
 .newsletter-form .cta-button:hover {
   background: var(--off-white);
 }
 
-/* ============================================
-   FOOTER
-   ============================================ */
+/* FOOTER */
 .footer {
   background: var(--dark-text);
   color: var(--white);
@@ -970,18 +997,16 @@ p {
 }
 
 .footer a {
-  color: var(--primary-pink);
+  color: var(--primary);
   text-decoration: none;
   transition: var(--transition-fast);
 }
 
 .footer a:hover {
-  color: var(--accent-coral);
+  color: var(--accent-turquoise);
 }
 
-/* ============================================
-   ANIMATIONS
-   ============================================ */
+/* ANIMATIONS */
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -993,9 +1018,7 @@ p {
   }
 }
 
-/* ============================================
-   RESPONSIVE
-   ============================================ */
+/* RESPONSIVE */
 @media (max-width: 768px) {
   .hamburger {
     display: flex;
