@@ -25,6 +25,7 @@ document.addEventListener("DOMContentLoaded", async function () {
     { name: "hero", target: "hero-placeholder" },
     { name: "intro", target: "intro-placeholder" },
     { name: "about", target: "about-placeholder" },
+    { name: "solution", target: "solution-placeholder" },
     { name: "services", target: "services-placeholder" },
     { name: "testimonials", target: "testimonials-placeholder" },
     { name: "faq", target: "faq-placeholder" },

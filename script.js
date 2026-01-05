@@ -87,6 +87,29 @@ function initializeApp() {
   });
 
   // ============================================
+  // HANDLE ANCHOR FROM URL ON PAGE LOAD
+  // ============================================
+  // This handles scrolling to a section if its ID is in the URL hash
+  if (window.location.hash) {
+    const target = document.querySelector(window.location.hash);
+    if (target) {
+      // Use a timeout to ensure all dynamic content is loaded and rendered
+      setTimeout(() => {
+        const headerOffset = 80;
+        const elementPosition = target.getBoundingClientRect().top;
+        const offsetPosition =
+          elementPosition + window.pageYOffset - headerOffset;
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: "smooth",
+        });
+      }, 150);
+    }
+  }
+
+
+  // ============================================
   // ANIMATION AU SCROLL (Intersection Observer)
   // ============================================
   const observerOptions = {
