@@ -1,83 +1,78 @@
-# Je réussis ma transition - Site Web
+# **Je réussis ma transition**
 
-## Structure du projet
+---
 
-Le site a été refactorisé en composants modulaires pour une meilleure maintenabilité.
+## 📌 Présentation du projet
 
-### Structure des fichiers
+**Je réussis ma transition** est un site vitrine développé pour une coach et thérapeute spécialisée en Thérapies Comportementales et Cognitives (TCC).
 
-```
-├── index.html                 # Fichier principal (simplifié)
-├── style.css                  # Styles CSS
-├── script.js                  # Script JavaScript principal
-├── components/                # Dossier des composants
-│   ├── loader.js             # Script de chargement des composants
-│   ├── header.html           # Navigation et en-tête
-│   ├── hero.html             # Section héro
-│   ├── intro.html            # Section d'introduction
-│   ├── about.html            # Section "À propos"
-│   ├── services.html         # Section services/accompagnements
-│   ├── testimonials.html     # Section témoignages
-│   ├── faq.html              # Section FAQ
-│   ├── newsletter.html       # Section newsletter
-│   └── footer.html           # Pied de page
-└── assets/                    # Ressources (images, etc.)
-```
+Le site remplace un ancien site WordPress non fonctionnel et insuffisamment orienté conversion. L'objectif principal : créer une page d'accueil conçue comme une page de vente pour attirer et convaincre de futurs clients, tout en présentant les programmes et services de coaching.
 
-## Avantages de cette structure
+---
 
-✅ **Maintenabilité** : Chaque section est dans un fichier séparé, plus facile à modifier
-✅ **Réutilisabilité** : Les composants peuvent être réutilisés dans d'autres pages
-✅ **Organisation** : Structure claire et logique
-✅ **Collaboration** : Plusieurs personnes peuvent travailler sur différents composants
-✅ **Performance** : Chargement asynchrone des composants
+## 🎯 Objectifs du projet
 
-## Comment ça fonctionne ?
+- **Créer une page d'accueil orientée conversion** avec une approche page de vente
+- **Présenter clairement l'expertise** en coaching et thérapie TCC
+- **Détailler les différents programmes** et services proposés
+- **Faciliter la prise de contact** via un formulaire intégré
+- **Optimiser le référencement naturel (SEO)** pour améliorer la visibilité
 
-1. Le fichier `index.html` contient uniquement des placeholders (div avec id)
-2. Le script `components/loader.js` charge automatiquement tous les composants HTML
-3. Une fois tous les composants chargés, le script principal `script.js` s'initialise
-4. Toutes les interactions et animations fonctionnent normalement
+---
 
-## Lancer le site en local
+## 🚀 Fonctionnalités principales
 
-Pour tester le site localement, vous devez utiliser un serveur web (les fichiers ne peuvent pas être chargés directement avec file://).
+- **Page d'accueil en mode page de vente** : structure persuasive et orientée conversion
+- **CMS headless Sanity** pour la gestion du blog
+- **Formulaire de contact** pour les demandes de renseignements
+- **Pages services** détaillant les offres de coaching et thérapie
+- **Section blog** pour partager des contenus et conseils
+- **Design responsive** adapté à tous les supports
 
-### Option 1 : Avec Python
+---
 
-```bash
-python3 -m http.server 8000
-```
+## 🛠️ Stack technique
 
-Puis ouvrez : http://localhost:8000
+- **Frontend** : HTML, CSS, JavaScript vanilla
+- **CMS** : Sanity.io (headless CMS)
+- **Déploiement** : Vercel *(prévu)*
 
-### Option 2 : Avec Node.js
+---
 
-```bash
-npx http-server -p 8000
-```
+## ⚠️ Défis techniques rencontrés
 
-Puis ouvrez : http://localhost:8000
+- **Développement en JavaScript vanilla** : retour aux fondamentaux après une longue période avec des frameworks
+- **Architecture projet HTML/CSS/JS** : structuration modulaire sans framework
+- **Conseil éditorial** : accompagnement sur la rédaction orientée conversion de la page de vente
 
-### Option 3 : Avec l'extension VS Code "Live Server"
+---
 
-Clic droit sur `index.html` → "Open with Live Server"
+## 🧠 Apprentissages
 
-## Modifier un composant
+- **Retour aux bases** : réappropriation de la structure HTML/CSS/JS pure
+- **Conseil en conversion** : réflexion sur la rédaction et l'architecture d'une page de vente
+- **Conseil SEO** : optimisation du contenu pour le référencement naturel
+- **Gestion de projet client** : communication et validation des livrables
 
-Pour modifier une section spécifique :
+---
 
-1. Ouvrez le fichier correspondant dans `components/`
-2. Modifiez le HTML
-3. Sauvegardez
-4. Rafraîchissez votre navigateur
+## 👤 Rôle dans le projet
 
-Pas besoin de toucher au fichier `index.html` principal !
+- **Développement frontend complet** (HTML, CSS, JavaScript)
+- **Intégration et configuration du CMS Sanity**
+- **Conseil SEO** et stratégie de référencement
+- **Conseil éditorial** sur la rédaction de la page de vente
+- **Mise en ligne et configuration du déploiement** *(en cours)*
 
-## Notes importantes
+---
 
-⚠️ **CORS** : Le site doit être servi via un serveur HTTP (pas en file:// local) pour que les composants se chargent correctement.
+## 🔮 Améliorations futures
 
-💡 **Ordre de chargement** : Les composants sont chargés dans l'ordre défini dans `components/loader.js`
+*Projet en cours de création – améliorations à définir après mise en ligne.*
 
-🎨 **Styles** : Tous les styles restent dans `style.css` et s'appliquent automatiquement aux composants
+---
+
+## 🌍 Démo
+
+🔗 **Lien vers le site** : *(en cours de développement)*  
+📸 **Screenshots** : *(à venir)*
