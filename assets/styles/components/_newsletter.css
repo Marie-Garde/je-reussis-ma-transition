@@ -1,0 +1,64 @@
+.newsletter-section {
+  padding: var(--spacing-xl) var(--spacing-md);
+  background: linear-gradient(135deg, var(--soft-turquoise), var(--primary));
+  text-align: center;
+  color: var(--white);
+}
+
+.newsletter-section h2 {
+  color: var(--white);
+}
+
+.newsletter-section h2::after {
+  background: var(--white);
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.newsletter-section p {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto var(--spacing-lg);
+}
+
+.newsletter-form {
+  display: flex;
+  gap: var(--spacing-sm);
+  max-width: 600px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.newsletter-form input {
+  flex: 1;
+  min-width: 250px;
+  padding: 1rem 1.5rem;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: var(--radius-full);
+  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  color: var(--white);
+  transition: var(--transition-fast);
+}
+
+.newsletter-form input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.newsletter-form input:focus {
+  outline: none;
+  border-color: var(--white);
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.newsletter-form .cta-button {
+  background: var(--white);
+  color: var(--soft-turquoise);
+}
+
+.newsletter-form .cta-button:hover {
+  background: var(--off-white);
+}

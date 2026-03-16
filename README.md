@@ -35,7 +35,7 @@ Le site remplace un ancien site WordPress non fonctionnel et insuffisamment orie
 
 - **Frontend** : HTML, CSS, JavaScript vanilla
 - **CMS** : Sanity.io (headless CMS)
-- **Déploiement** : Vercel *(prévu)*
+- **Déploiement** : Vercel _(prévu)_
 
 ---
 
@@ -62,17 +62,17 @@ Le site remplace un ancien site WordPress non fonctionnel et insuffisamment orie
 - **Intégration et configuration du CMS Sanity**
 - **Conseil SEO** et stratégie de référencement
 - **Conseil éditorial** sur la rédaction de la page de vente
-- **Mise en ligne et configuration du déploiement** *(en cours)*
+- **Mise en ligne et configuration du déploiement** _(en cours)_
 
 ---
 
 ## 🔮 Améliorations futures
 
-*Projet en cours de création – améliorations à définir après mise en ligne.*
+_Projet en cours de création – améliorations à définir après mise en ligne._
 
 ---
 
 ## 🌍 Démo
 
-🔗 **Lien vers le site** : *(en cours de développement)*  
-📸 **Screenshots** : *(à venir)*
+🔗 **Lien vers le site** : _(en cours de développement)_  
+📸 **Screenshots** : _(à venir)_

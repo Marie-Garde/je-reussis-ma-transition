@@ -1,0 +1,71 @@
+.cta-button {
+  display: inline-block;
+  padding: 1rem 2.5rem;
+  background: linear-gradient(135deg, var(--soft-turquoise), var(--primary));
+  color: var(--white);
+  text-decoration: none;
+  border-radius: var(--radius-full);
+  font-weight: var(--font-weight-semibold);
+  font-size: 1rem;
+  transition: all var(--transition-normal);
+  box-shadow: var(--shadow-md);
+  border: none;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    135deg,
+    var(--accent-turquoise),
+    var(--soft-turquoise)
+  );
+  transition: var(--transition-normal);
+  z-index: -1;
+}
+
+.cta-button:hover::before {
+  left: 0;
+}
+
+.cta-button:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-hover);
+}
+
+.cta-button--inverted {
+  background: var(--white);
+  color: var(--soft-turquoise);
+}
+
+.cta-button--inverted:hover {
+  color: var(--white);
+}
+
+.cta-primary {
+  background: linear-gradient(135deg, var(--soft-turquoise), var(--primary));
+  color: var(--white);
+}
+
+.cta-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-hover);
+}
+
+.cta-secondary {
+  background: var(--white);
+  color: var(--soft-turquoise);
+  border: 2px solid var(--primary);
+}
+
+.cta-secondary:hover {
+  background: var(--white-turquoise);
+  transform: translateY(-3px);
+}

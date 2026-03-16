@@ -1,0 +1,120 @@
+.services-section {
+  padding: var(--spacing-xl) var(--spacing-md);
+  background: linear-gradient(
+    135deg,
+    var(--white-turquoise) 0%,
+    var(--white) 50%,
+    var(--light-gray) 100%
+  );
+}
+
+.services-section h2 {
+  text-align: center;
+}
+
+.services-section h2::after {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: var(--spacing-lg);
+  margin-top: var(--spacing-xl);
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.service-card {
+  background: var(--white);
+  padding: var(--spacing-lg);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  transition: all var(--transition-normal);
+  border: 2px solid transparent;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--shadow-hover);
+  border-color: var(--primary);
+}
+
+.service-icon {
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(135deg, var(--soft-orange), var(--orange));
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: var(--spacing-md);
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-normal);
+  padding: 20px;
+}
+
+.service-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.service-card:hover .service-icon {
+  transform: scale(1.1) rotate(5deg);
+  box-shadow: var(--shadow-md);
+}
+
+.service-card h3 {
+  color: var(--soft-turquoise);
+  margin-bottom: var(--spacing-md);
+  min-height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-card p {
+  color: var(--medium-text);
+  margin-bottom: var(--spacing-md);
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  min-height: 4.5rem;
+}
+
+.service-card ul {
+  list-style: none;
+  margin: var(--spacing-md) 0;
+  text-align: left;
+  width: 100%;
+}
+
+.service-card li {
+  padding-left: 1.5rem;
+  margin-bottom: var(--spacing-sm);
+  position: relative;
+  color: var(--medium-text);
+}
+
+.service-card li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--primary);
+  font-weight: var(--font-weight-bold);
+}
+
+.service-card .cta-button {
+  margin-top: auto;
+  width: 100%;
+  text-align: center;
+}

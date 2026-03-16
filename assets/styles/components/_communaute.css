@@ -1,0 +1,41 @@
+.citation-section {
+  background: var(--white);
+  padding: var(--spacing-xl) var(--spacing-md);
+  text-align: center;
+}
+
+.citation-section blockquote {
+  font-size: 1.8rem;
+  font-style: italic;
+  color: var(--dark-text);
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.citation-section blockquote + p {
+  margin-top: 1rem;
+  color: var(--medium-text);
+}
+
+.communaute-about .about-content {
+  align-items: center;
+}
+
+.communaute-services {
+  background: var(--white);
+  padding: var(--spacing-xl) var(--spacing-md);
+}
+
+.communaute-services h2 {
+  text-align: center;
+}
+
+.communaute-services h2::after {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.communaute-services .services-grid {
+  margin-top: var(--spacing-lg);
+}

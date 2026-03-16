@@ -1,0 +1,14 @@
+.solution-section {
+  background: var(--white);
+  padding: var(--spacing-xl) var(--spacing-md);
+}
+
+.solution-section .section-title h2::after {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.solution-content {
+  grid-template-columns: 1fr 400px;
+  align-items: center;
+}

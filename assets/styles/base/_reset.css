@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-main);
+  font-weight: var(--font-weight-regular);
+  color: var(--dark-text);
+  line-height: 1.7;
+  background-color: var(--off-white);
+  overflow-x: hidden;
+}

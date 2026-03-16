@@ -1,0 +1,13 @@
+.observation-section {
+  padding: var(--spacing-xl) var(--spacing-md);
+  background: var(--light-gray);
+}
+
+.observation-section h2 {
+  text-align: center;
+}
+
+.observation-section h2::after {
+  left: 50%;
+  transform: translateX(-50%);
+}
