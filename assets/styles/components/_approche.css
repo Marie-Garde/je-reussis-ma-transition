@@ -1,0 +1,111 @@
+.approche-section {
+  padding: var(--spacing-xl) var(--spacing-md);
+  background: linear-gradient(180deg, var(--light-gray), var(--white-turquoise));
+}
+
+.approche-section .section-title {
+  text-align: center;
+  margin-bottom: var(--spacing-lg);
+}
+
+.approche-pillars {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-md);
+  max-width: 1280px;
+  margin: 0 auto var(--spacing-lg);
+}
+
+.approche-pillar {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-md);
+  box-shadow: var(--shadow-md);
+  position: relative;
+  overflow: hidden;
+  transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+}
+
+.approche-pillar:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.approche-pillar--turquoise { border-top: 4px solid var(--primary); }
+.approche-pillar--orange    { border-top: 4px solid var(--orange); }
+.approche-pillar--primary   { border-top: 4px solid var(--accent-turquoise); }
+
+.approche-pillar__num {
+  display: block;
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: var(--spacing-sm);
+  opacity: 0.1;
+  color: var(--dark-text);
+}
+
+.approche-pillar h3 {
+  font-size: 1rem;
+  font-weight: var(--font-weight-semibold);
+  color: var(--dark-text);
+  margin-bottom: var(--spacing-xs);
+}
+
+.approche-pillar p {
+  font-size: 0.9rem;
+  color: var(--medium-text);
+  line-height: 1.75;
+  margin: 0;
+}
+
+/* Résultats */
+.approche-resultats {
+  background: linear-gradient(135deg, #0d3530, #0e2645);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-lg);
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.approche-resultats h3 {
+  color: var(--white);
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: var(--font-weight-semibold);
+  margin-bottom: var(--spacing-md);
+}
+
+.approche-resultats__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-md);
+}
+
+.approche-resultat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.6rem;
+  padding: var(--spacing-sm);
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.resultat-from {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.65);
+  font-style: italic;
+}
+
+.resultat-arrow {
+  font-size: 1.2rem;
+  color: var(--primary);
+}
+
+.resultat-to {
+  font-size: 0.95rem;
+  font-weight: var(--font-weight-semibold);
+  color: var(--white);
+}

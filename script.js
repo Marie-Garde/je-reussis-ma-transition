@@ -1,3 +1,35 @@
+function typeHeroTitle() {
+  const titleEl = document.querySelector(".hero-title");
+  if (!titleEl) return;
+
+  const fullHTML = titleEl.innerHTML.trim();
+  titleEl.innerHTML = "";
+
+  let i = 0;
+  let current = "";
+
+  function next() {
+    if (i >= fullHTML.length) {
+      titleEl.innerHTML = fullHTML;
+      return;
+    }
+    if (fullHTML[i] === "<") {
+      const end = fullHTML.indexOf(">", i);
+      current += fullHTML.slice(i, end + 1);
+      i = end + 1;
+      titleEl.innerHTML = current + '<span class="typing-cursor">|</span>';
+      setTimeout(next, 0);
+    } else {
+      current += fullHTML[i];
+      i++;
+      titleEl.innerHTML = current + '<span class="typing-cursor">|</span>';
+      setTimeout(next, 40);
+    }
+  }
+
+  setTimeout(next, 400);
+}
+
 function initializeApp() {
   const hamburger = document.querySelector(".hamburger");
   const navMenu = document.querySelector(".nav-menu");

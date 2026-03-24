@@ -100,3 +100,15 @@
 .about-text p:last-of-type {
   margin-bottom: var(--spacing-lg);
 }
+
+.about-insight {
+  margin: var(--spacing-md) 0;
+  padding: var(--spacing-md) var(--spacing-lg);
+  border-left: 4px solid var(--accent-turquoise);
+  background: linear-gradient(135deg, rgba(0, 188, 212, 0.06), rgba(232, 180, 188, 0.06));
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  font-style: italic;
+  font-size: 1.05rem;
+  color: var(--dark-text);
+  line-height: 1.7;
+}

@@ -13,10 +13,11 @@ document.addEventListener("DOMContentLoaded", async () => {
   const components = [
     { name: "header", target: "header-placeholder" },
     { name: "hero", target: "hero-placeholder" },
-    { name: "intro", target: "intro-placeholder" },
     { name: "observation", target: "observation-placeholder" },
+    { name: "cherche", target: "cherche-placeholder" },
     { name: "about", target: "about-placeholder" },
     { name: "solution", target: "solution-placeholder" },
+    { name: "approche", target: "approche-placeholder" },
     { name: "services", target: "services-placeholder" },
     { name: "testimonials", target: "testimonials-placeholder" },
     { name: "faq", target: "faq-placeholder" },
@@ -29,4 +30,5 @@ document.addEventListener("DOMContentLoaded", async () => {
   }
 
   if (typeof initializeApp === "function") initializeApp();
+  if (typeof typeHeroTitle === "function") typeHeroTitle();
 });

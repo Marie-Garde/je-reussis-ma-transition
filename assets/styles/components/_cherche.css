@@ -1,0 +1,131 @@
+.cherche-section {
+  padding: var(--spacing-xl) var(--spacing-md);
+  background: var(--light-gray);
+}
+
+.cherche-grid {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: var(--spacing-md);
+  align-items: stretch;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.cherche-divider {
+  width: 1px;
+  align-self: stretch;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    rgba(10, 204, 181, 0.25),
+    transparent
+  );
+  margin: 1rem 0;
+}
+
+.cherche-col {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-md);
+  box-shadow: var(--shadow-sm);
+}
+
+.cherche-col--oui {
+  background: var(--white-turquoise);
+  border: 1px solid rgba(10, 204, 181, 0.2);
+}
+
+.cherche-col-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: var(--spacing-md);
+}
+
+.cherche-col-header h3 {
+  font-size: 1.05rem;
+  margin-bottom: 0;
+  font-weight: var(--font-weight-semibold);
+}
+
+.cherche-col--non .cherche-col-header h3 {
+  color: var(--medium-text);
+}
+
+.cherche-col--oui .cherche-col-header h3 {
+  color: var(--dark-text);
+}
+
+.cherche-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  font-size: 0.7rem;
+  font-weight: var(--font-weight-bold);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  flex-shrink: 0;
+}
+
+.cherche-badge--non {
+  background: #f0f0f0;
+  color: var(--light-text);
+  border: 1px solid #e0e0e0;
+}
+
+.cherche-badge--oui {
+  background: rgba(10, 204, 181, 0.15);
+  color: var(--primary);
+  border: 1px solid rgba(10, 204, 181, 0.3);
+}
+
+.cherche-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.cherche-col--non .cherche-list li {
+  color: var(--light-text);
+  font-size: 0.95rem;
+  font-style: italic;
+  padding-left: 1.25rem;
+  position: relative;
+  text-decoration: line-through;
+  text-decoration-color: rgba(138, 138, 138, 0.4);
+}
+
+.cherche-col--non .cherche-list li::before {
+  content: "×";
+  position: absolute;
+  left: 0;
+  color: #c0c0c0;
+  font-style: normal;
+  font-weight: var(--font-weight-bold);
+  text-decoration: none;
+}
+
+.cherche-col--oui .cherche-list li {
+  color: var(--medium-text);
+  font-size: 0.95rem;
+  padding-left: 1.25rem;
+  position: relative;
+}
+
+.cherche-col--oui .cherche-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.45em;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--primary);
+}
