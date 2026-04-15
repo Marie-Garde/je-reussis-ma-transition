@@ -70,6 +70,27 @@
   color: var(--soft-turquoise);
 }
 
+/* Social Links */
+.nav-socials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.nav-social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--medium-text);
+  transition: var(--transition-fast);
+}
+
+.nav-social-link:hover {
+  color: var(--soft-turquoise);
+  transform: translateY(-2px);
+}
+
 /* Hamburger Menu */
 .hamburger {
   display: none;
